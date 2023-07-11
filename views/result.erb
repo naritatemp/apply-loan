@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Apply form for a loan</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+ 
+  <body>
+      <h1>Result</h1>
+      <% if @loan_approved %>
+        <p>Your loan is approved. </p>
+      <% else %>
+        <p>Your loan is NOT approved. </p>
+      <% end %>
+      <p>You can loan <%= @maximum_loan %>euro as maximum sum.
+      <% if @best_period %>
+        And the best period for max loan is <%= @best_period %>months.
+      <% end %>
+      </p>
+  </body>
+</html>
