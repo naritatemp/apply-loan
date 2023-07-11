@@ -18,7 +18,7 @@
 
 4. how to check and run this code.
 ```
-cd inbank
+cd apply-loan
 # install sinatra and puma.
 gem install sinatra
 gem install puma
