@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Apply form for a loan</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+ 
+  <body>
+      <h1>Apply form for a loan</h1>
+      <p>Please input the informations.</p>
+      <form action="http://localhost:4567/result" method="GET">
+        <p>
+          <label>personal code</label>
+          <select name="pcode">
+            <option value="49002010965">49002010965</option>
+            <option value="49002010976">49002010976</option>
+            <option value="49002010987">49002010987</option>
+            <option value="49002010998">49002010998</option>
+          </select>
+        </p>
+        <p><label>loan amount(euro, 2000-10000 euro)</label> <input type="number" name="amount" min="2000" max="10000" value="2000"/></p>
+        <p><label>loan period(month, 12-60 months)</label> <input type="number" name="period" min="12" max="60" value="12"/></p>
+        <input type="submit" value="Apply" /></p>
+      </form>
+
+  </body>
+</html>
